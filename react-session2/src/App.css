@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  
+  
+}
+
+.menu{
+  padding: 20px;
+  height:665px;
+  text-align:center;
+  background-image: url(./components/images/dish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
