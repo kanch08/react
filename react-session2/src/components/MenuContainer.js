@@ -48,7 +48,7 @@ class MenuContainer extends Component {
         render() {
             return (
                 <div className="menu">
-                    <h1>DISHES - LIST</h1>
+                    
                     {/* {this.state.list.map((list,index) =><Dishes dish={list}/>)} */}
                     <Dishes dish={this.state.list} dish_add={this.addDish}/>
                 </div>
@@ -61,13 +61,16 @@ class Dishes extends Component {
     render() {
         return (
            <div>
-            
+            <form className="form_dishes">
             <ul>
+            <h1>MENU</h1>
                {this.props.dish.map(list=> (
                  <li onClick={()=>console.log(list.cost,list.ingredient)}>{list.name}</li>
               ))}
            </ul>
               <button className="add_btn" onClick={this.props.dish_add}>Add Dish</button>
+            </form>
+           
            </div>
             
            
